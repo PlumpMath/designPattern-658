@@ -2,7 +2,7 @@ package com.niit.pattern.entity;
 
 public class product {
 	
-	
+	//constructor Method
 	public product(int id, int quantity, String name, String brand, String category, String description, double price) {
 		super();
 		this.id = id;
@@ -14,6 +14,7 @@ public class product {
 		this.price = price;
 	}	
 	
+	//Getter and Setter Method.
 	public int getId() {
 		return id;
 	}
@@ -57,12 +58,14 @@ public class product {
 		this.price = price;
 	}
 	
+	//toString Method 
 	@Override
 	public String toString() {
 		return "product [id=" + id + ", quantity=" + quantity + ", name=" + name + ", brand=" + brand + ", category="
 				+ category + ", description=" + description + ", price=" + price + "]";
 	}
-
+	
+	//Private Method Declaration.
 	private int  id;
 	private int  quantity;
 	private String name;
